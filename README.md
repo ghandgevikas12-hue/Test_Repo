@@ -6,3 +6,16 @@ Answer: "Azure SQL can certainly answer this question using multiple JOINs. Howe
 
 Neo4j models these relationships directly as nodes and edges, so traversing complex clinical pathways becomes simpler, more intuitive, and often more efficient than maintaining increasingly complex JOIN queries."
 ```
+
+```
+Those are fundamentally time-series and relational data tasks, which Azure SQL handles very well.
+```
+
+```
+### key challanges
+Extract timestamps from different reports.
+Use the sample collection time, not the report generation time, for lab values.
+Align irregular lab results with continuous vital signs.
+Carry the latest lab value forward until a new sample is collected.
+Produce a single chronological table that AI can reason over.
+```
